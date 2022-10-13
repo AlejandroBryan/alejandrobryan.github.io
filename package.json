@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node-sass -w scss/styles.scss  css/style.css",
-    "build": "node-sass scss/styles.scss css/style.production.css --output-style compressed"
+    "start": "node-sass -w src/scss/styles.scss  src/css/style.css",
+    "build": "node-sass src/scss/styles.scss src/css/style.production.css --output-style compressed"
   },
   "keywords": [],
   "author": "",

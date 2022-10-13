@@ -125,10 +125,15 @@
 
 /* ====================== FOOTER ==========================*/
 #footer {
-  padding: 12px 10px;
   margin-bottom: 0;
   margin-top: 25px;
   width: 100%; }
+  #footer padding12px {
+    padding: 12pxpx; }
+  #footer padding11px {
+    padding: 11pxpx; }
+  #footer padding10px {
+    padding: 10pxpx; }
   #footer .footer-nav li {
     display: inline-block; }
     #footer .footer-nav li a {
@@ -316,7 +321,8 @@ svg, img {
       font-size: 20px; }
       .nav .navbar li .item {
         text-align: center;
-        padding: 6px; } }
+        padding: 6px;
+        border-bottom: 1px solid black; } }
 
 /* ====================== TABLE ==========================*/
 table {
