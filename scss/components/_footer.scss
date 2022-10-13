@@ -1,0 +1,25 @@
+/* ====================== FOOTER ==========================*/
+
+#footer {
+   @include generater(padding 12px, 10px);
+   
+    margin-bottom: 0;
+    margin-top: 25px;
+    width:100%;
+
+    .footer-nav{
+      li{
+         display:inline-block;
+
+         a {
+            display: block;
+            margin: 0 4px;
+
+            img {
+               height: 35px;
+           }
+         }
+      }
+    
+   }
+ }

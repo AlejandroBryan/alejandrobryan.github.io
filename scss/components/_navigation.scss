@@ -1,0 +1,103 @@
+/* ====================== NAVIGATION ==========================*/ 
+
+ .header-section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: $full-width;
+
+
+    .nav {
+        height: auto;
+        width: $full-width;
+        position: relative;
+        padding: 12px;
+        margin-bottom: 2.7em;
+        
+        
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            width: $full-width;
+    
+            &-li{
+                width: $full-width;  
+                list-style: none;
+                font-size: 20px;
+            }
+    
+    
+            .logo{
+                font-size: 1.4em;
+                font-weight: 700;
+                text-transform:uppercase;
+                height: 45px;
+                width: 120px;
+            }
+    
+    
+            .item {
+                display: block;
+                font-weight: $font-large;
+                padding-bottom: 6px;
+                width: $full-width;
+                
+    
+                &:hover{
+                    opacity: 85%;
+                }
+                &:visited {
+                     color: rgb(35, 36, 41);
+                     background-color: $secondary-color;   
+                }
+               &:active{
+                    border: none;
+                    background-color: $secondary-color;
+                }
+                
+            }
+        }
+    }
+
+
+
+     
+}
+
+
+@media(min-width: $md) {
+
+    .nav {
+
+        div {
+          margin-right: auto;
+
+        }
+      
+      .navbar {
+          flex-direction: row !important;
+
+        li {
+           width: auto;  
+           font-size: 20px;
+
+           .item {
+            text-align: center;
+            padding: 6px;
+            border-bottom: 1px solid black;
+        
+             }
+        }
+
+     }
+  }
+    
+}
+
+
+
+
+
+
+

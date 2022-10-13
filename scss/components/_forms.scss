@@ -1,0 +1,40 @@
+/* ====================== FORMS ==========================*/
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    fieldset{
+        border: none;
+        margin: 0;
+        padding: 0;
+
+        legend{
+            font-size: 1.9em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .form-control{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        border-radius: 6px;
+        outline: none;
+        box-shadow: 2px 2px 2px 1px rgba(36, 37, 39, 0.199);
+        margin: 15px auto;
+        width: 100%;
+        padding: 1.3em;;
+    }
+}
+
+
+:focus {
+    background-color: rgba(35, 100, 197, 0.05);
+
+}
+

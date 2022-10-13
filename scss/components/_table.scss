@@ -1,0 +1,43 @@
+/* ====================== TABLE ==========================*/
+
+table {
+    border-collapse: collapse;
+    border: none;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    width: 100%;
+
+    caption {
+        font-weight: $font-large;
+        padding: 10px;
+        caption-side: top;
+    }
+
+td,
+th {
+    border-right: .4px solid rgba(95, 95, 95, 0.678);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+    color: rgba(20, 18, 18, 0.877);
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+
+    &[scope="row"] {
+        background-color: #d7d9f2;
+    }
+}
+
+
+
+}

@@ -1,0 +1,27 @@
+
+@mixin hover-effect($color) {
+    &:hover{
+        color: lighten($color, 15%);
+        outline: none;
+    }
+}
+
+@mixin button-display {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 38px;
+    cursor: pointer;
+    font-size: large;
+    outline: none;
+    transition: 0.2s opacity;
+
+}
+
+@mixin generater($property, $start, $end) {
+    @for $i from $start through $end {
+    #{$property}#{$i} {
+    #{$property}: #{$i}px;
+    }
+    }
+    }

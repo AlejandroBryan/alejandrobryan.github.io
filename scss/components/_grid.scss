@@ -1,0 +1,163 @@
+/* ====================== GRID AND FLEXBOX LAYOUT ==========================*/
+.container {
+    padding: 0 10px;
+    min-height: 60%;
+    overflow: auto;
+}
+
+
+
+/* ======== GRID ==========*/
+
+@supports (display: grid) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+      margin: 0;
+
+      .grid__item {
+        background-color: rgba(238, 234, 234, 0.918);
+        width: auto;
+        min-height: auto;
+        margin: 0;
+
+        &:last-child {
+          grid-column: auto / auto;
+          grid-row: auto / auto;
+        }
+
+        
+      }
+ 
+    } 
+
+}
+
+
+/* ======== FLEXBOX ==========*/
+
+
+.row {
+    display: flex;
+	  flex-direction: column;
+    justify-content: center;
+ }
+
+ [class^=col] {
+	margin-top: 10px;
+	flex-basis: 100%;
+	min-height: 25px;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+
+
+/*====================  BREAK POINTS ===================*/
+
+
+@media all and (min-width: $md){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+ 
+}
+
+@media all and (min-width: $xl){
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .grid__item:last-child {
+      grid-column: 3 / 3;
+      grid-row: 1 / 3;
+     
+    }
+  }
+
+
+}
+
+
+@media(min-width: $md){
+
+.container{
+  padding: 0;
+  width:70%;
+  display: block;
+  margin: 2em auto;
+  
+  }
+
+  .row {
+      flex-direction: row;
+    }
+
+    [class^=col] {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 0;
+      
+    }
+    
+    [class^=col] + [class^=col] {
+      margin-left: 10px;
+    }
+    .col-1 {
+      flex-basis: 8.33%;
+    }
+    
+    .col-2 {
+      flex-basis: 16.67%;
+    }
+    
+    .col-3 {
+      flex-basis: 25.00%;
+    }
+    
+    .col-4 {
+      flex-basis: 33.33%;
+    }
+    
+    .col-5 {
+      flex-basis: 41.67%;
+    }
+    
+    .col-6 {
+      flex-basis: 50.00%;
+    }
+    
+    .col-7 {
+      flex-basis: 58.33%;
+    }
+    
+    .col-8 {
+      flex-basis: 66.67%;
+    }
+    
+    .col-9 {
+      flex-basis: 75.00%
+    }
+    
+    .col-10 {
+      flex-basis: 83.33%;
+    }
+    
+    .col-11 {
+      flex-basis: 91.67%;
+    }
+    
+    .col-12 {
+      flex-basis: 100%;
+    }
+  
+  .under-construction-icon {
+      width: 100%;
+      height: 600px;
+  }
+}
+

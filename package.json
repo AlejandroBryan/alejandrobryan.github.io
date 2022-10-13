@@ -1,0 +1,16 @@
+{
+  "name": "eighth-task-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass -w scss/styles.scss  css/style.css",
+    "build": "node-sass scss/styles.scss css/style.production.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
