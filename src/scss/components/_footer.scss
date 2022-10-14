@@ -1,7 +1,7 @@
 /* ====================== FOOTER ==========================*/
 
 #footer {
-   @include generater(padding, 12px, 10px);
+   @include generater(padding, 12, 10px);
    
     margin-bottom: 0;
     margin-top: 25px;

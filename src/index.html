@@ -5,12 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task Seventh -- Index</title>
-    <link rel="icon" href="/images/favicon.ico" type="image/png">
+    <link rel="icon" href="./images/favicon.ico" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;700&display=swap" rel="stylesheet">
-    <!-- 
-    <link rel="stylesheet" href="/src/css/style.css">
-    -->
-    <link  href="/src/css/style.production.css" rel="stylesheet" type="text/css">
+    
 </head>
 <body>
 <!-- Navigation start here-->
@@ -18,25 +15,25 @@
         <nav class="nav">
             <div class="container">
             <ul class="navbar" role="menubar">
-                <div>
-                    <a class="brand-item" href="index.html">
-                        <img src="/src/images/logo.svg" alt="alejandro's home page logo" class="logo">
-                    </a>
-                </div>
                 
-                    <li>
+                    <a class="brand-item" href="index.html" >
+                        <img src="./images/logo.svg" alt="alejandro's home page logo" class="logo">
+                    </a>
+                
+                
+                    <li role="presentation">
                         <a href="./index.html" role="menuitem" class="item">Home</a>
                     </li>
 
-                    <li >
+                    <li role="presentation">
                         <a href="./about.html" role="menuitem" class="item">About me</a>
                     </li >
 
-                    <li >
+                    <li role="presentation">
                         <a href="./work.html" role="menuitem" class="item">Work</a>
                     </li >
 
-                    <li>
+                    <li role="presentation">
                         <a href="./contact.html" role="menuitem" class="item">Contact</a>
                     </li>
         
@@ -49,7 +46,7 @@
 
 
 <!-- Main start here-->
-    <main class="container" role="main">
+    <main class="container">
         <div class="row">
 
             <div class="col-3">
@@ -60,7 +57,7 @@
                 <h1 class="mb-1">Hello World!</h1>
                 <h2 class="mb-1">My name is Alejandro Bryan</h2>
                 <p>I am <span class="label rounded">Web developer</span>  from 
-                    <a href="https://de.wikipedia.org/wiki/Auerbach_(Elztal)" target="_blank" class="text__link">
+                    <a href="https://de.wikipedia.org/wiki/Auerbach_(Elztal)" target="_blank" class="text__link" rel="noopener">
                         Auerbach (Bei Mosbach)
                     </a>
                 </p>
@@ -88,7 +85,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="/src/images/linkedin_icon.svg" alt="linkedin icon">
+                    <img src="./images/linkedin_icon.svg" alt="linkedin icon">
                 </a>
                             
             </li>
@@ -97,6 +94,7 @@
     </footer>
  <!-- footer end here -->
 
- <script src="/src/js/tota11y.min.js"></script>
+ <script type="module" src="./js/index.js"></script>
+ 
 </body>
 </html>

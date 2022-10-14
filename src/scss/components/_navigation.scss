@@ -20,6 +20,10 @@
             display: flex;
             flex-direction: column;
             width: $full-width;
+
+            .brand-item{
+                margin-right: auto;
+            }
     
             &-li{
                 width: $full-width;  

@@ -3,14 +3,25 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "targets": {
+    "main": false
+  },
   "scripts": {
-    "start": "node-sass -w src/scss/styles.scss  src/css/style.css",
-    "build": "node-sass src/scss/styles.scss src/css/style.production.css --output-style compressed"
+    "compile": "parcel build src/scss/styles.scss ./dist/src/css/style.css",
+    "start": "parcel src/*.html --open",
+    "build": "parcel build src/index.html --dist-dir  docs --public-url ./",
+    "deploy": "npm run build && git add . && git commit -a -m 'latest build' &&  git push -u origin master",
+    "sass-watch": "node-sass -w src/scss/styles.scss  src/css/style.css",
+    "sass-build": "node-sass src/scss/styles.scss src/css/style.production.css --output-style compressed",
+    "dev": " npm run sass-watch && npm start"
   },
   "keywords": [],
-  "author": "",
+  "author": "Alejandro Bryan",
   "license": "ISC",
   "devDependencies": {
-    "node-sass": "^7.0.3"
+    "@khanacademy/tota11y": "^0.2.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "node-sass": "^7.0.3",
+    "parcel": "^2.7.0"
   }
 }
