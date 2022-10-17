@@ -1,107 +1,166 @@
-/* ====================== NAVIGATION ==========================*/ 
+/* ====================== NAVIGATION ========================== */
 
- .header-section {
+.header__section {
+  display: block;
+  margin-top: 0;
+  width: $full-width;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .nav {
+    padding: 12px;
+    position: relative;
+    width: $full-width;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  width: $full-width;
+
+  .nav__link {
+    display: none;
+    font-size: 20px;
+    list-style: none;
+    padding: 12px 6px;
+    transition: all 0.7s;
+    width: $full-width;
+  }
+
+  .active {
+    display: block;
+    transition: 0.5s ease-in-out;
+  }
+
+  .item {
+    display: block;
+    font-weight: $font-large;
+    padding-bottom: 6px;
     width: $full-width;
 
-
-    .nav {
-        height: auto;
-        width: $full-width;
-        position: relative;
-        padding: 12px;
-        margin-bottom: 2.7em;
-        
-        
-        .navbar {
-            display: flex;
-            flex-direction: column;
-            width: $full-width;
-
-            .brand-item{
-                margin-right: auto;
-            }
-    
-            &-li{
-                width: $full-width;  
-                list-style: none;
-                font-size: 20px;
-            }
-    
-    
-            .logo{
-                font-size: 1.4em;
-                font-weight: 700;
-                text-transform:uppercase;
-                height: 45px;
-                width: 120px;
-            }
-    
-    
-            .item {
-                display: block;
-                font-weight: $font-large;
-                padding-bottom: 6px;
-                width: $full-width;
-                
-    
-                &:hover{
-                    opacity: 85%;
-                }
-                &:visited {
-                     color: rgb(35, 36, 41);
-                     background-color: $secondary-color;   
-                }
-               &:active{
-                    border: none;
-                    background-color: $secondary-color;
-                }
-                
-            }
-        }
+    &:hover {
+      opacity: 0.85;
     }
 
+    &:visited {
+      background-color: $secondary-color;
+      color: rgb(35, 36, 41);
+    }
 
-
-     
-}
-
-
-@media(min-width: $md) {
-
-    .nav {
-
-        div {
-          margin-right: auto;
-
-        }
-      
-      .navbar {
-          flex-direction: row !important;
-
-        li {
-           width: auto;  
-           font-size: 20px;
-
-           .item {
-            text-align: center;
-            padding: 6px;
-            border-bottom: 1px solid black;
-        
-             }
-        }
-
-     }
+    &:active {
+      background-color: $secondary-color;
+      border: 0;
+    }
   }
-    
 }
 
+// === LOGO ===
 
+.brand__item {
+  left: 0;
+  margin-right: auto;
+  outline: none;
+  position: absolute;
+  top: 6px;
 
+  .logo {
+    height: 45px;
+  }
+}
 
+// === LOGO ===
 
+// === HAMBURGER MENU ===
 
+.toggle__button {
+  cursor: pointer;
+  margin: 0 10px;
+  order: 1;
+  position: absolute;
+  right: 0;
+  top: 16px;
+  z-index: 10;
+}
 
+.bars {
+  background: rgb(235, 228, 228);
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  width: 35%;
+  width: 1.7em;
+
+  &::before,
+  &::after {
+    background: rgb(235, 228, 228);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+  }
+
+  &::before {
+    transform: translateY(-16px);
+  }
+
+  &::after {
+    transform: translateY(16px);
+  }
+}
+
+.open {
+  background: transparent;
+  box-shadow: none;
+  transform: translateX(-50px);
+
+  &::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+
+  &::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+}
+
+// === HAMBURGER MENU ===
+
+@media (min-width: $md) {
+
+  .toggle__button {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+
+    .brand__item {
+      top: 3px;
+
+      .logo {
+        height: 75px;
+      }
+    }
+  }
+
+  .navbar {
+    flex-direction: row !important;
+    margin-left: auto;
+    margin-top: 16px;
+    width: auto;
+
+    .nav__link {
+      display: inline-block;
+      font-size: 20px;
+      padding: 0;
+      width: auto;
+
+      .item {
+        padding: 6px;
+        text-align: center;
+      }
+    }
+  }
+}

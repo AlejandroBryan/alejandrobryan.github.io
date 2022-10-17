@@ -1,34 +1,31 @@
-/* ====================== BUTTONS ==========================*/
-.btn {
-    @include button-display;
-    padding: 0 30px;
-    font-weight: $font-large;
-    border: none;
-    
+/* ====================== BUTTONS ========================== */
 
-    &:hover {
-        opacity: 0.8;;
-    
-    }
-    
+.btn {
+  @include button-display;
+
+  border: 0;
+  font-weight: $font-large;
+  padding: 0 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 }
 
 .text__link {
-    @include button-display;
-    display: inline;
-    border-bottom: 1px solid rgba(14, 13, 13, 0.678);
-    width: fit-content;
+  @include button-display;
 
+  border-bottom: 1px solid rgba(14, 13, 13, 67.8%);
+  display: inline;
+  width: fit-content;
 }
 
-.primary{
-    background-color: $primary-color;
-    color: $white-color;
-
-}
-.secondary{
-   background-color: $secondary-color;
-   color: $white-color;
-
+.primary {
+  background-color: $primary-color;
+  color: $white-color;
 }
 
+.secondary {
+  background-color: $secondary-color;
+  color: $white-color;
+}

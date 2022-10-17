@@ -1,25 +1,40 @@
-/* ====================== FOOTER ==========================*/
+// ====================== FOOTER ==========================
 
-#footer {
-   @include generater(padding, 12, 10px);
-   
-    margin-bottom: 0;
-    margin-top: 25px;
-    width:100%;
+.footer {
+  @include generater(padding, 12, 10px);
 
-    .footer-nav{
-      li{
-         display:inline-block;
+  margin-bottom: 0;
+  margin-top: 25px;
+  width: 100%;
+}
 
-         a {
-            display: block;
-            margin: 0 4px;
+.footer__nav {
 
-            img {
-               height: 35px;
-           }
-         }
-      }
-    
-   }
- }
+  li {
+    display: inline-block;
+
+    .social {
+      @include hover-effect-inverse($primary-color);
+
+      background-size: 30px 30px;
+      display: inline-block;
+      height: 30px;
+      margin-left: 5px;
+      text-indent: -9999px;
+      transition: all 0.7s;
+      width: 30px;
+    }
+  }
+}
+
+.github {
+  background-image: url('../images/github_icon.svg');
+}
+
+.linkedin {
+  background-image: url('../images/linkedin_icon.svg');
+}
+
+.twitter {
+  background-image: url('../images/twitter_icon.svg');
+}

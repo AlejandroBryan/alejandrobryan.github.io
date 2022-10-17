@@ -2,3 +2,4 @@ node_modules/
 .hintrc/
 dist/
 .parcel-cache/
+.vs.code/

@@ -1,1 +1,0 @@
-{"mappings":"AAEA,IAAIA,EAAQC,SAASC,cAAc,UACnCC,QAAQC,IAAIJ","sources":["src/js/index.js"],"sourcesContent":["import '../scss/styles.scss';\n\nlet wappe = document.querySelector('.wappe');\nconsole.log(wappe);"],"names":["$8f6a480bb40b134f$var$wappe","document","querySelector","console","log"],"version":3,"file":"contact.50b85530.js.map"}

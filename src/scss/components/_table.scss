@@ -1,43 +1,40 @@
-/* ====================== TABLE ==========================*/
+/* ====================== TABLE ========================== */
 
 table {
-    border-collapse: collapse;
-    border: none;
-    letter-spacing: 1px;
-    font-family: sans-serif;
-    font-size: .8rem;
-    width: 100%;
+  border: none;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  width: 100%;
 
-    caption {
-        font-weight: $font-large;
-        padding: 10px;
-        caption-side: top;
-    }
-
-td,
-th {
-    border-right: .4px solid rgba(95, 95, 95, 0.678);
+  caption {
+    caption-side: top;
+    font-weight: $font-large;
     padding: 10px;
-}
+  }
 
-td {
+  td,
+  th {
+    border-right: 0.4px solid rgba(95, 95, 95, 67.8%);
+    padding: 10px;
+  }
+
+  td {
     text-align: center;
-}
+  }
 
-tr:nth-child(even) {
+  tr:nth-child(even) {
     background-color: #eee;
-    color: rgba(20, 18, 18, 0.877);
-}
+    color: rgba(20, 18, 18, 87.7%);
+  }
 
-th[scope="col"] {
+  th[scope='col'] {
     background-color: #696969;
     color: #fff;
 
-    &[scope="row"] {
-        background-color: #d7d9f2;
+    &[scope='row'] {
+      background-color: #d7d9f2;
     }
-}
-
-
-
+  }
 }

@@ -1,4 +1,13 @@
 import '../scss/styles.scss';
+import NavBar from './modules/navbar';
 
-let wappe = document.querySelector('.wappe');
-console.log(wappe);
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  if(document.querySelector('.toggle__button')){new NavBar()}
+
+})
+

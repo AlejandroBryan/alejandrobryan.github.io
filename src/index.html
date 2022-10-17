@@ -4,42 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Seventh -- Index</title>
+    <title>Alejandro Bryan -- Index</title>
     <link rel="icon" href="./images/favicon.ico" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;700&display=swap" rel="stylesheet">
     
 </head>
 <body>
 <!-- Navigation start here-->
-  <header class="mb-3 header-section">
+  <header class="mb-3 header__section">
+    <div class="container">
         <nav class="nav">
-            <div class="container">
+                <a class="brand__item" href="/" >
+                    <img src="./images/logo.svg" alt="alejandro's home page logo" class="logo">
+                </a>
             <ul class="navbar" role="menubar">
                 
-                    <a class="brand-item" href="index.html" >
-                        <img src="./images/logo.svg" alt="alejandro's home page logo" class="logo">
-                    </a>
-                
-                
-                    <li role="presentation">
+                    <li class="nav__link" role="presentation">
                         <a href="./index.html" role="menuitem" class="item">Home</a>
                     </li>
 
-                    <li role="presentation">
+                    <li class="nav__link" role="presentation">
                         <a href="./about.html" role="menuitem" class="item">About me</a>
                     </li >
 
-                    <li role="presentation">
+                    <li class="nav__link" role="presentation">
                         <a href="./work.html" role="menuitem" class="item">Work</a>
                     </li >
 
-                    <li role="presentation">
+                    <li class="nav__link" role="presentation">
                         <a href="./contact.html" role="menuitem" class="item">Contact</a>
                     </li>
+
+                    <li class="toggle__button">
+                        <span class="bars"></span> 
+                    </li>
         
-            </ul>
-        </div>       
+            </ul>  
+               
         </nav>
+    </div>     
 </header>
 <!-- Navigation end here -->
 
@@ -50,7 +53,7 @@
         <div class="row">
 
             <div class="col-3">
-                <img class="circle" src="/src/images/alejandro-portrait.png" alt="Alejandro's pictures">
+                <img class="circle" src="/src/images/alejandro-portrait.png" alt="Alejandro Bryan">
             </div>
 
             <div class="col-7">
@@ -62,37 +65,30 @@
                     </a>
                 </p>
 
-                <a href="#" class="text__link">Check out some of my works</a>
+                <a href="./work.html" class="text__link">Check out some of my works</a>
             </div>
       </div>
     </main>
  <!-- Main end here-->
     
 <!-- footer start here-->
-    <footer id="footer">
-        <div class="container text-center">
-        <p>Find me on</p>
-        <ul class="footer-nav">
-            <li>
-                <a href="#">
-                    <img src="/src/images/github_icon.svg" alt="github icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="/src/images/twitter_icon.svg" alt=" twitter icon">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="./images/linkedin_icon.svg" alt="linkedin icon">
-                </a>
-                            
-            </li>
-        </ul>
-     </div>
-    </footer>
- <!-- footer end here -->
+<footer class="footer">
+    <div class="container text-center">
+    <p>Find me on</p>
+    <ul class="footer__nav">
+        <li>
+          <a href="https://github.com/AlejandroBryan" class="social github" target="_blank"></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/AlejandroBryan0" class="social twitter" target="_blank"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/alejandro-bryan-944934231/" class="social linkedin" target="_blank" ></a>                   
+        </li>
+    </ul>
+ </div>
+</footer>
+<!-- footer end here -->
 
  <script type="module" src="./js/index.js"></script>
  

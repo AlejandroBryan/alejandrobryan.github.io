@@ -1,0 +1,21 @@
+{
+  "extends": ["stylelint-config-sass-guidelines", "stylelint-config-standard-scss"],
+    "customSyntax": "postcss-scss",
+    "plugins": [
+      "stylelint-scss"
+    ],
+    "rules": {
+          "color-named": "never",
+          "color-function-notation": "legacy",
+          "block-closing-brace-empty-line-before": "never",
+          "rule-empty-line-before": ["always-multi-line"],
+          "string": ["always-multi-line", "always-where-required"],
+          "max-nesting-depth": 2,
+          "string-quotes": "single",
+          "at-rule-no-unknown": null,
+          "scss/at-rule-no-unknown": true,
+          "selector-class-pattern": ["^[a-zA-Z0-9__]*$", { "resolveNestedSelectors": true }]
+   
+}
+
+}

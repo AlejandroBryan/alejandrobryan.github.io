@@ -1,28 +1,42 @@
-
 @mixin hover-effect($color) {
-    &:hover{
-        color: lighten($color, 15%);
-        outline: none;
-    }
+
+  &:hover {
+    color: lighten($color, 15%);
+    outline: none;
+  }
+}
+
+@mixin hover-effect-inverse($color) {
+
+  &:hover {
+    opacity: 0.5;
+    transform: translateY(-15px);
+  }
+}
+
+@mixin label-animation-effect {
+
+  &:hover {
+    color: $primary-color;
+    opacity: 0.5;
+  }
 }
 
 @mixin button-display {
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
-    line-height: 38px;
-    cursor: pointer;
-    font-size: large;
-    outline: none;
-    transition: 0.2s opacity;
-
+  cursor: pointer;
+  display: inline-block;
+  font-size: large;
+  line-height: 38px;
+  outline: none;
+  text-decoration: none;
+  transition: 0.2s opacity;
+  vertical-align: middle;
 }
 
-
 @mixin generater($property, $start, $end) {
-    @for $i from $start through $end {
+  @for $i from $start through $end {
     #{$property}#{$i} {
-    #{$property}: #{$i}px;
+      #{$property}: #{$i}px;
     }
-    }
-    }
+  }
+}

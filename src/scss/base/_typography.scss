@@ -1,53 +1,53 @@
-/* ====================== TYPOGRAPHY ==========================*/
+/* ====================== TYPOGRAPHY ========================== */
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body, html{
-    height: $full-height;
+body,
+html {
+  height: $full-height;
 }
 
 body {
-   font-size: 16px;
-   font-family: 'Noto', sans-serif;
-   font-weight: $font-light;
-   margin: 0;
-   line-height: 1.6;
+  font-family: Noto, sans-serif;
+  font-size: 16px;
+  font-weight: $font-light;
+  line-height: 1.6;
+  margin: 0;
 }
 
-li{
-    list-style: none;
+li {
+  list-style: none;
 }
 
-h1{
-    font-size: 2.4em;
-    letter-spacing: .1em;
+h1 {
+  font-size: 2.4em;
+  letter-spacing: 0.1em;
 }
 
-h3{
-    font-size: 1.8em;
-    letter-spacing: .1em;
+h3 {
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
 }
-h5{
-    font-size: 1.4em;
-    letter-spacing: .1em;
+
+h5 {
+  font-size: 1.4em;
+  letter-spacing: 0.1em;
 }
+
 p {
-    line-height: 120%;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    margin-bottom: 1.2em;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  line-height: 120%;
+  margin-bottom: 1.2em;
 }
 
-a{
-    text-decoration: none;
-    color: $primary-color;
-    @include hover-effect($primary-color);
-   
+a {
+  @include hover-effect($primary-color);
+
+  color: $primary-color;
+  text-decoration: none;
 }
-
-

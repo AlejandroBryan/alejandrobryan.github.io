@@ -1,17 +1,15 @@
 //======== Color =========//
-$primary-color : rgba(10, 9, 9, 0.9);
-$secondary-color: rgba(55, 96, 211, 0.9);
+$primary-color: rgba(10, 9, 9, 90%);
+$secondary-color: rgba(55, 96, 211, 90%);
 $white-color: rgb(255, 255, 255);
 
-
 //======== Helpers =========//
-$rounded:6px;
-$circle:50%;
+$rounded: 6px;
+$circle: 50%;
 
 //======== Fonts =========//
-$font-large:700;
+$font-large: 700;
 $font-light: 300;
-
 
 //======== Spacings =========//
 $full-width: 100%;
